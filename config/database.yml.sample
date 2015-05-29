@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  user:
+  password:
+  pool: 5
+
+development:
+  <<: *default
+  database: twittery_board_development
+
+test:
+  <<: *default
+  database: twittery_board_test
+
+production:
+  <<: *default
+  database: twittery_board_production
+  username: twittery_board
+  password: <%= ENV['TWITTERY_BOARD_DATABASE_PASSWORD'] %>
