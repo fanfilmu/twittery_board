@@ -20,6 +20,8 @@ gem "devise"
 gem "omniauth"
 gem "omniauth-twitter"
 
+gem "rails_12factor", group: :production
+
 group :development, :test do
   gem "pry"
   gem "pry-byebug"
