@@ -24,6 +24,7 @@ gem "twitter"
 gem "rails_12factor", group: :production
 
 group :development, :test do
+  gem "rspec-rails", "~> 3.0"
   gem "pry"
   gem "pry-byebug"
 
@@ -33,6 +34,5 @@ group :development, :test do
 end
 
 group :test do
-  gem "rspec"
   gem "shoulda-matchers"
 end
