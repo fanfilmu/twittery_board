@@ -1,0 +1,10 @@
+en:
+  static_pages:
+    home:
+      welcome:
+        title: Welcome to TwitteryBoard!
+        desc: A place where you can quickly invite all your friends wherever you choose!
+      login:
+        not_authorized: You are currently not signed in
+        desc: You must sign in using your Twitter account to use TwitteryBoard
+        link: Sign in with Twitter
