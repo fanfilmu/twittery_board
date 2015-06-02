@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   end
 
   root to: "static_pages#home"
+
+  resources :tweets, only: %i(index new create)
 end
