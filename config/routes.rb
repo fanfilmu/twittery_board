@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   resources :tweets, only: %i(index new create)
   resources :comments, only: [ :new, :create, :index ]
+
+  resources :events, only: [ :new, :create, :index, :show ] do
+    resources :comments
+  end
 end
