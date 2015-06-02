@@ -5,3 +5,6 @@
   %p.lead= t(".login.not_authorized")
   %p= t(".login.desc")
   = link_to t(".login.link"), user_omniauth_authorize_path(:twitter)
+- else
+  - content_for(:context_navs) do
+    %li= link_to t(".tweets"), tweets_path
