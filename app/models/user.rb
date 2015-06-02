@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   extend Omniauthable
 
   has_many :tweets
+  has_many :comments
 
   devise :rememberable, :omniauthable, omniauth_providers: [:twitter]
 

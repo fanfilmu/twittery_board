@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   root to: "static_pages#home"
 
   resources :tweets, only: %i(index new create)
+  resources :comments, only: [ :new, :create, :index ]
 end
