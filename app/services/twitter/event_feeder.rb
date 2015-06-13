@@ -2,7 +2,7 @@ module Twitter
   class EventFeeder
     attr_reader :client
 
-    def initialize(client)
+    def initialize(client = ::Twitter::AdminClient.new)
       raise ArgumentError.new "Missing client" unless client
 
       @client = client

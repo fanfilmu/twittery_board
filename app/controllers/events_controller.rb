@@ -59,6 +59,6 @@ class EventsController < ApplicationController
   end
 
   def event_uploader
-    @event_uploader ||= Twitter::EventUploader.new current_user.twitter
+    @event_uploader ||= Twitter::EventUploader.new
   end
 end
