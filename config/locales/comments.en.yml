@@ -1,0 +1,13 @@
+en:
+  comments:
+    index:
+      header: "Comments"
+    new:
+      header: "New comment"
+    comments:
+      num_comments:
+        zero: "0 comments"
+        one: "1 comment"
+        other: "%{count} comments"
+    form:
+      submit: "Comment"

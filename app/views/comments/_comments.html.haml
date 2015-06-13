@@ -1,4 +1,3 @@
-.comments
-  - @comments.each do |comment|
-    .comment
-      %p= comment.content
+%h3= t(".num_comments", count: @comments.count)
+
+%ul.comments= render @comments

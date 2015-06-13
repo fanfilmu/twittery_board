@@ -5,6 +5,6 @@
   %p= event.description
 
   = link_to comments_path(event_id: event.id), class: "pull-right" do
-    = t(".num_comments", num_comments: event.comments.count)
+    = t("comments.comments.num_comments", count: event.comments.count)
 
   .clearfix

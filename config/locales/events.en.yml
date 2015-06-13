@@ -3,8 +3,6 @@ en:
     index:
       header: "Events"
       create_event: "Create event"
-    event:
-      num_comments: "%{num_comments} comments"
     new:
       header: "New event"
     show:
