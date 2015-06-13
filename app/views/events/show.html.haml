@@ -1,8 +1,15 @@
 .page-header
-  %h2= @event.title
+  %h2
+    - if @event.uploaded?
+      %span.label.label-info= t(".uploaded")
+
+    = @event.title
 
   %ul.btn-actions.pull-right
-    %li= link_to t(".edit"), edit_event_path(@event), class: "btn btn-primary"
+    - unless @event.uploaded?
+      %li= link_to t(".edit"), edit_event_path(@event), class: "btn btn-primary"
+      %li= link_to t(".upload"), upload_event_path(@event), class: "btn btn-info"
+
     %li= link_to t(".delete"), @event, method: :delete, data: { confirm: t(".deletion_confirmation") }, class: "btn btn-danger"
 
 %p= @event.description

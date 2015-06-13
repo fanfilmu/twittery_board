@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   resources :comments, only: [ :new, :create, :index ]
 
   resources :events do
+    member do
+      get :upload
+    end
+
     resources :comments
   end
 end

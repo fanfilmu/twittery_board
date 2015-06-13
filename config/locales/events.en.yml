@@ -1,5 +1,7 @@
 en:
   events:
+    event:
+      uploaded: "Uploaded"
     index:
       header: "Events"
       create_event: "Create event"
@@ -7,6 +9,7 @@ en:
       header: "New event"
     show:
       edit: "Edit"
+      upload: "Upload to Twitter"
       delete: "Remove"
       deletion_confirmation: "This action CANNOT be undone. Are you sure?"
     edit:

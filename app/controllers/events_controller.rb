@@ -1,9 +1,9 @@
 class EventsController < ApplicationController
-  before_action :set_event,    only: [:show, :edit, :update, :destroy]
+  before_action :set_event,    only: [:show, :edit, :update, :destroy, :upload]
   before_action :set_comments, only: :show
 
   def index
-    @events = Event.all
+    @events = Event.all.order(updated_at: :desc)
   end
 
   def new
@@ -24,7 +24,7 @@ class EventsController < ApplicationController
     if @event.update(event_params)
       redirect_to events_path
     else
-      render action: "edit"
+      render :edit
     end
   end
 
@@ -32,6 +32,14 @@ class EventsController < ApplicationController
     @event.destroy
 
     redirect_to events_path
+  end
+
+  def upload
+    if event_uploader.upload @event
+      redirect_to @event, notice: "Event successfully uploaded to Twitter"
+    else
+      redirect_to @event, error: "Failed to upload event to Twitter"
+    end
   end
 
   private
@@ -48,5 +56,9 @@ class EventsController < ApplicationController
 
   def event_params
     params.require(:event).permit(:title, :description)
+  end
+
+  def event_uploader
+    @event_uploader ||= Twitter::EventUploader.new current_user.twitter
   end
 end
