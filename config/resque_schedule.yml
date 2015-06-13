@@ -1,0 +1,4 @@
+feed_events:
+  cron: "0 * * * *"
+  class: "EventFeederJob"
+  queue: event_feeder

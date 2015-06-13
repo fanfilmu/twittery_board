@@ -26,6 +26,9 @@ gem "twitter"
 
 gem "rails_12factor", group: :production
 
+gem "resque"
+gem "resque-scheduler"
+
 group :development, :test do
   gem "rspec-rails", "~> 3.0"
   gem "pry"

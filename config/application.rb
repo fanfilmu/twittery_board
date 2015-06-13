@@ -18,7 +18,9 @@ Bundler.require(*Rails.groups)
 module TwitteryBoard
   class Application < Rails::Application
     config.autoload_paths += %w(
+      #{config.root}/lib
       #{config.root}/app/services
+      #{config.root}/app/jobs
     )
 
     config.active_record.raise_in_transactional_callbacks = true
