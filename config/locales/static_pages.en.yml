@@ -8,4 +8,3 @@ en:
         not_authorized: You are currently not signed in
         desc: You must sign in using your Twitter account to use TwitteryBoard
         link: Sign in with Twitter
-      tweets: Tweets
