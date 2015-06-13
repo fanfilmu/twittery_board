@@ -1,7 +1,7 @@
-%h1 Events
+.page-header
+  %h2= t(".header")
 
-- @events.each do |event|
-  %p
-    = link_to event.title, event_path(event)
+  %ul.btn-actions.pull-right
+    %li= link_to t(".create_event"), new_event_path, class: "btn btn-primary"
 
-  %P= event.description
+%ul.events= render @events

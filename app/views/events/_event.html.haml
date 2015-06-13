@@ -1,0 +1,10 @@
+%li
+  %h3
+    = link_to event.title, event_path(event)
+
+  %p= event.description
+
+  = link_to comments_path(event_id: event.id), class: "pull-right" do
+    = t(".num_comments", num_comments: event.comments.count)
+
+  .clearfix

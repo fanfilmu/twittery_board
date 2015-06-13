@@ -1,0 +1,15 @@
+en:
+  events:
+    index:
+      header: "Events"
+      create_event: "Create event"
+    event:
+      num_comments: "%{num_comments} comments"
+    new:
+      header: "New event"
+    show:
+      edit: "Edit"
+      delete: "Remove"
+      deletion_confirmation: "This action CANNOT be undone. Are you sure?"
+    edit:
+      header: "Edit event"

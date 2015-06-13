@@ -1,4 +1,9 @@
-%h1= @event.title
+.page-header
+  %h2= @event.title
+
+  %ul.btn-actions.pull-right
+    %li= link_to t(".edit"), edit_event_path(@event), class: "btn btn-primary"
+    %li= link_to t(".delete"), @event, method: :delete, data: { confirm: t(".deletion_confirmation") }, class: "btn btn-danger"
 
 %p= @event.description
 

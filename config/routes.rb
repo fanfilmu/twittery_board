@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :comments, only: [ :new, :create, :index ]
 
-  resources :events, only: [ :new, :create, :index, :show ] do
+  resources :events do
     resources :comments
   end
 end
