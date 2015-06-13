@@ -6,16 +6,7 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %nav.navbar.navbar-default.navbar-fixed-top
-      .container
-        .navbar-header
-          = link_to "Twittery Board", root_path, class: "navbar-brand"
-        %ul.nav.navbar-nav
-          = yield(:context_navs)
-        %ul.nav.navbar-nav.navbar-right
-          - if current_user.present?
-            %li= link_to t(".sign_out"), destroy_user_session_path
-          - else
-            %li= link_to t(".twitter_log_in"), user_omniauth_authorize_path(:twitter)
+    = render "layouts/header"
+
     .container
       = yield

@@ -1,0 +1,23 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button{class: "navbar-toggle collapsed", data: {toggle: "collapse", target: "#navbar-menu"}}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      = link_to "Twittery Board", root_path, class: "navbar-brand"
+
+    #navbar-menu.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        - if current_user.present?
+          %li= link_to t(".menu.events"), events_path
+
+      %ul.nav.navbar-nav.navbar-right
+        - if current_user.present?
+          .navbar-btn
+            %li= link_to t(".sign_out"), destroy_user_session_path, class: "btn btn-default"
+        - else
+          .navbar-btn
+            %li= link_to t(".twitter_log_in"), user_omniauth_authorize_path(:twitter), class: "btn btn-primary"

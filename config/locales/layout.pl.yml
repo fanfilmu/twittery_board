@@ -1,6 +1,9 @@
 pl:
   layouts:
     application:
-      twitter_log_in: Zaloguj się przez Twitter
-      logged_in: Twoje konto
-      sign_out: Wyloguj
+      header:
+        twitter_log_in: Zaloguj się przez Twitter
+        logged_in: Twoje konto
+        sign_out: Wyloguj
+        menu:
+          events: "Wydarzenia"

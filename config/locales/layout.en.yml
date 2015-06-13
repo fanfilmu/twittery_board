@@ -1,6 +1,9 @@
 en:
   layouts:
     application:
-      twitter_log_in: Log in with Twitter
-      logged_in: Your account
-      sign_out: Sign out
+      header:
+        twitter_log_in: Log in with Twitter
+        logged_in: Your account
+        sign_out: Sign out
+        menu:
+          events: "Events"
