@@ -18,4 +18,20 @@ describe Event do
   describe "associations" do
     it { should have_many :comments }
   end
+
+  describe "#uploaded?" do
+    subject { event.uploaded? }
+
+    context "when event is on Twitter" do
+      let(:event) { Event.new tweet_id: "123" }
+
+      it { should eq true }
+    end
+
+    context "when event is not on Twitter" do
+      let(:event) { Event.new tweet_id: nil }
+
+      it { should eq false }
+    end
+  end
 end
