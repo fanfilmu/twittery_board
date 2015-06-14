@@ -10,4 +10,6 @@ describe User do
   describe "associations" do
     it { should have_many :comments }
   end
+
+  it_behaves_like "omniauthable"
 end
