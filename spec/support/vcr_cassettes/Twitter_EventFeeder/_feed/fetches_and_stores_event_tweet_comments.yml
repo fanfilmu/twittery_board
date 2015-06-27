@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/mentions_timeline.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.14.0
+      Authorization:
+      - OAuth oauth_consumer_key="<TWITTER_API_KEY>", oauth_nonce="065993ce7d09e7381a11cb75b27c82f2",
+        oauth_signature="iMpU%2BQI%2F2fi8KI1jkRMMO7SSyGs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1435413856", oauth_token="<TWITTER_APP_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1334'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 27 Jun 2015 14:04:18 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sat, 27 Jun 2015 14:04:18 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143541385877992428; Domain=.twitter.com; Path=/; Expires=Mon,
+        26-Jun-2017 14:04:18 UTC
+      - lang=pl; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 459c09f58be0f2f917359fb63365eea3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '13'
+      X-Rate-Limit-Reset:
+      - '1435414692'
+      X-Response-Time:
+      - '50'
+      X-Transaction:
+      - c7c62af827e8b02a
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"created_at":"Sat Jun 27 14:04:04 +0000 2015","id":614796338761441280,"id_str":"614796338761441280","text":"@MBegejowicz
+        Test comment #3","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614790909973168128,"in_reply_to_status_id_str":"614790909973168128","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sat
+        Jun 27 13:53:26 +0000 2015","id":614793665366650881,"id_str":"614793665366650881","text":"@MBegejowicz
+        Test comment #2","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614790909973168128,"in_reply_to_status_id_str":"614790909973168128","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sat
+        Jun 27 13:53:20 +0000 2015","id":614793637914902528,"id_str":"614793637914902528","text":"@MBegejowicz
+        Test comment #1","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614790909973168128,"in_reply_to_status_id_str":"614790909973168128","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sat
+        Jun 27 13:39:02 +0000 2015","id":614790038942011392,"id_str":"614790038942011392","text":"@MBegejowicz
+        Test comment #3","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614785581432893440,"in_reply_to_status_id_str":"614785581432893440","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sat
+        Jun 27 13:38:37 +0000 2015","id":614789934965202944,"id_str":"614789934965202944","text":"@MBegejowicz
+        Test comment #2","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614785581432893440,"in_reply_to_status_id_str":"614785581432893440","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sat
+        Jun 27 13:38:24 +0000 2015","id":614789880724459520,"id_str":"614789880724459520","text":"@MBegejowicz
+        Test comment #1","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":614785581432893440,"in_reply_to_status_id_str":"614785581432893440","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"created_at":"Sun
+        Jun 14 18:09:54 +0000 2015","id":610147164753412096,"id_str":"610147164753412096","text":"@MBegejowicz
+        Super. Testujemy j\u0105 zatem","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":610145926389329920,"in_reply_to_status_id_str":"610145926389329920","in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":3303207621,"id_str":"3303207621","name":"Micha\u0142
+        Begejowicz","screen_name":"MBegejowicz","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Fri
+        May 29 22:43:48 +0000 2015","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":17,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_0_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_0_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"pl"},{"created_at":"Sat
+        Jun 13 21:38:45 +0000 2015","id":609837333840588800,"id_str":"609837333840588800","text":"@MBegejowicz
+        test","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":3303207621,"in_reply_to_user_id_str":"3303207621","in_reply_to_screen_name":"MBegejowicz","user":{"id":2718891330,"id_str":"2718891330","name":"Bartosz
+        \u017burkowski","screen_name":"zurek107","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":9,"listed_count":0,"created_at":"Sat
+        Aug 09 08:36:46 +0000 2014","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":24,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_1_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2718891330\/1413842725","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"MBegejowicz","name":"Micha\u0142
+        Begejowicz","id":3303207621,"id_str":"3303207621","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Sat, 27 Jun 2015 14:04:18 GMT
+recorded_with: VCR 2.9.3

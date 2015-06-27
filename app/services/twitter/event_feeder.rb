@@ -1,4 +1,4 @@
-module Twitter
+  module Twitter
   class EventFeeder
     attr_reader :client
 
@@ -39,7 +39,7 @@ module Twitter
     end
 
     def normalized_tweet_text(text)
-      text.sub /^@\w+/, ""
+      text.sub(/^@\w+/, "").strip
     end
   end
 end
