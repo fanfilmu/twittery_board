@@ -51,4 +51,6 @@ group :test do
   gem "simplecov"
   gem "fabrication"
   gem "faker"
+  gem "vcr"
+  gem "webmock"
 end
