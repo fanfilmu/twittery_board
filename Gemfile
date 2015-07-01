@@ -44,6 +44,7 @@ group :development do
   gem "capistrano-bundler"
   gem "capistrano3-puma"
   gem "capistrano-rbenv"
+  gem "capistrano-resque", "=0.2.1"
 end
 
 group :test do

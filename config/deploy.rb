@@ -13,3 +13,5 @@ set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 set :rbenv_type, :user
 set :rbenv_ruby, "2.2.2"
+
+set :resque_environment_task, true
