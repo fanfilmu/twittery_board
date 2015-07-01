@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/update.json
+    body:
+      encoding: UTF-8
+      string: status=Test+Event%0ACarry+on
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.14.0
+      Authorization:
+      - OAuth oauth_consumer_key="<TWITTER_API_KEY>", oauth_nonce="128b3cc42b36d75aa85c36d9aaf7a93d",
+        oauth_signature="5m0PpRNKf0vyrCDmHWKACgbggkQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1435787365", oauth_token="<TWITTER_APP_TOKEN>", oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '779'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 01 Jul 2015 21:49:26 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Wed, 01 Jul 2015 21:49:26 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143578736634837877; Domain=.twitter.com; Path=/; Expires=Fri,
+        30-Jun-2017 21:49:26 UTC
+      - lang=pl; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 5de24b1496c816d134fb3d5911a165af
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '129'
+      X-Transaction:
+      - 45e7b3afa6a654da
+      X-Tsa-Request-Body-Time:
+      - '1'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"created_at":"Wed Jul 01 21:49:26 +0000 2015","id":616363004138008577,"id_str":"616363004138008577","text":"Test
+        Event\nCarry on","source":"\u003ca href=\"http:\/\/twittery-board.herokuapp.com\/\"
+        rel=\"nofollow\"\u003etwittery_board\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3303207621,"id_str":"3303207621","name":"Micha\u0142
+        Begejowicz","screen_name":"MBegejowicz","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Fri
+        May 29 22:43:48 +0000 2015","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":18,"lang":"pl","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_0_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_0_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}'
+    http_version: 
+  recorded_at: Wed, 01 Jul 2015 21:49:26 GMT
+recorded_with: VCR 2.9.3

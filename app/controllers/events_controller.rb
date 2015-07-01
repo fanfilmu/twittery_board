@@ -14,7 +14,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
 
     if @event.save
-      redirect_to @event, notice: "Comment successfully created"
+      redirect_to @event, notice: "Event successfully created"
     else
       render :new
     end
@@ -22,7 +22,7 @@ class EventsController < ApplicationController
 
   def update
     if @event.update(event_params)
-      redirect_to events_path
+      redirect_to events_path, notice: "Event successfully updated"
     else
       render :edit
     end
@@ -38,7 +38,7 @@ class EventsController < ApplicationController
     if event_uploader.upload @event
       redirect_to @event, notice: "Event successfully uploaded to Twitter"
     else
-      redirect_to @event, error: "Failed to upload event to Twitter"
+      redirect_to @event, alert: "Failed to upload event to Twitter"
     end
   end
 

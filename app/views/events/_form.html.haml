@@ -1,4 +1,10 @@
 = form_for @event do |f|
+  - if @event.errors.any?
+    #error_explanation
+      %ul
+        - @event.errors.full_messages.each do |msg|
+          %li= msg
+
   .form-group
     = f.label :title
     = f.text_field :title, class: "form-control"
