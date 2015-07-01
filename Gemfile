@@ -39,6 +39,13 @@ group :development, :test do
   gem "dotenv-rails"
 end
 
+group :development do
+  gem "capistrano-rails"
+  gem "capistrano-bundler"
+  gem "capistrano3-puma"
+  gem "capistrano-rbenv"
+end
+
 group :test do
   gem "shoulda-matchers"
   gem "simplecov"
