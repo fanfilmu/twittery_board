@@ -21,8 +21,6 @@ module Twitter
       end
 
       tweet
-    rescue Twitter::Error::Unauthorized
-      nil
     end
 
     def upload_all(events)

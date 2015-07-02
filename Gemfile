@@ -40,11 +40,13 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano-rails"
-  gem "capistrano-bundler"
-  gem "capistrano3-puma"
-  gem "capistrano-rbenv"
-  gem "capistrano-resque", "=0.2.1"
+  gem "capistrano-rails",            require: false
+  gem "capistrano-bundler",          require: false
+  gem "capistrano3-puma",            require: false
+  gem "capistrano-rbenv",            require: false
+  gem "capistrano-resque", "=0.2.1", require: false
+
+  gem "rails-erd"
 end
 
 group :test do

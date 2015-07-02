@@ -3,8 +3,6 @@
     attr_reader :client
 
     def initialize(client = ::Twitter::AdminClient.new)
-      raise ArgumentError.new "Missing client" unless client
-
       @client = client
     end
 
@@ -34,8 +32,6 @@
       client.mentions_timeline.select do |tweet|
         tweet.in_reply_to_tweet_id == event.tweet_id.to_i
       end
-    rescue Twitter::Error::Unauthorized
-      []
     end
 
     def normalized_tweet_text(text)
